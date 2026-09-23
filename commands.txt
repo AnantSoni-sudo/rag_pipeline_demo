@@ -1,0 +1,37 @@
+install uv : 
+
+command : 
+    pip install uv
+    uv --version
+
+What is UV : 
+uv is a modern, extremely fast Python package and project manager written in Rust. 
+It’s designed to replace tools like pip, pip-tools, pipx, poetry, pyenv, twine, and virtualenv, 
+offering a single unified solution that is 10–100x faster than pip.
+
+Starting a New Project:
+    uv init myproject 
+(
+    Creates a new Python project in the folder myproject.
+    Sets up a pyproject.toml file and a virtual environment automatically.
+)
+
+Initilize the virtual environment :
+    uv venv 
+
+Activate virtual environment :
+    .venv/Scripts/activate
+
+
+To install all the required packages : 
+    uv add -r requirements.txt
+
+Install ipykernel : 
+    uv add ipykernel
+usage : installs the Jupyter kernel package into your environment, enabling you to run notebooks with that environment.
+
+Install text splitter : 
+pip install langchain-text-splitters
+
+uv add langchain-text-splitters
+
